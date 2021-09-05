@@ -34,3 +34,6 @@ body {
     background-color: rgba(255, 255, 255, .9);
 }
 
+.span-two {
+    grid-column: span 2; /* make equal and AC buttons take two squares */
+}
