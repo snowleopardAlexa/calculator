@@ -7,9 +7,9 @@
 body {
     padding: 0;
     margin: 0;
-    background: #f12711;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .calculator-grid {
@@ -38,9 +38,9 @@ body {
     grid-column: span 2; /* make equal and AC buttons take two squares */
 }
 
-.outpput {
+.output {
     grid-column: 1 / -1;
-    background-color: rgba(0, 0, 0, .75);
+    background-color: rgba(138, 8, 110, 0.75);
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
@@ -48,4 +48,9 @@ body {
     padding: 10px;
     word-wrap: break-word;
     word-break: break-all;
+}
+
+.output .prev-operand {
+    font-size: 1.5rem;
+    color:rgba(255, 255, 255, .75);
 }
