@@ -9,12 +9,14 @@ class Calculator {
 
     // function
     clear() {
-
+        this.currentOperand = ''
+        this.prevOperand = ''
+        this.operation = undefined
     }
 
     // function
     delete() {
-
+     
     }
 
     appendNumber(number) {
@@ -30,7 +32,7 @@ class Calculator {
     }
 
     updateDisplay() {
-        
+
     }
 }
 
