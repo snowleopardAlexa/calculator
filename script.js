@@ -26,5 +26,15 @@ class Calculator {
         this.currentOperand = this.currentOperand.toString() + number.toString()
     }
 
+    chooseOperation(operation) {
+        if (this.currentOperand === '') return
+        if (this.prevOperand !== '') {
+            this.compute()
+        }
+        this.operation = operation
+        this.prevOperand = this.currentOperand
+        this.currentOperand = ''
+    }
+
     
 }
