@@ -14,4 +14,11 @@ class Calculator {
         this.prevOperand = ''
         this.operation = undefined
     }
+
+    // delete function
+    delete() {
+        this.currentOperand = this.currentOperand.toString().slice(0, -1)
+    }
+
+    // append number function 
 }
