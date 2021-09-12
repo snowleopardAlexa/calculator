@@ -79,5 +79,14 @@ class Calculator {
         }
     }
 
-    
+    updateDisplay() {
+        this.currentOperandTextElement.innerText = 
+        this.getDisplayNumber(this.currentOperand)
+        if(this.operation != null) {
+            this.prevOperandTextElement.innerText = 
+            `${this.getDisplayNumber(this.prevOperand)} ${this.operation}`
+        } else {
+            this.prevOperandTextElement.innerText = ''
+        }
+    }
 }
