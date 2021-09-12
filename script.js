@@ -9,4 +9,9 @@ class Calculator {
     }
 
     // clear the calculator 
+    clear() {
+        this.currentOperand = ''
+        this.prevOperand = ''
+        this.operation = undefined
+    }
 }
